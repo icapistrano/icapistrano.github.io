@@ -1,0 +1,271 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+h2  {
+    font-size: 1.4em;
+    margin: 20px;
+    display: inline;
+
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+nav img{
+    margin-right: 10px;
+}
+
+header #first-image {
+    margin-left: 10px;;
+}
+
+#header-container {
+    background-color: black;
+    height:45px;
+    position: relative;
+}
+
+
+nav {
+    float: right;
+    background-color: black;
+    width: 50%;
+}
+
+nav ul {
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 5px;
+    text-align: left;
+    background-color: gray;
+    opacity: 0.5;
+
+}
+
+nav ul li{
+    padding: 10px;
+    width: auto;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+nav #menu {
+    float: right;
+}
+
+h5 {
+    margin: 0;
+    display: inline-block;
+    color: black;
+    font-size: 1.2em;
+}
+
+nav ul li:hover {
+    background-color: rgb(197, 197, 197);
+} 
+
+#bottom {
+    display: inline-block;
+    /* background-color: red; */
+    /* position: absolute; */
+    height: 1000px;
+}
+
+.icons {
+    position: absolute;
+}
+
+.hide-nav{
+    display: none;
+}
+
+.hide-element{
+    display: none;
+}
+
+#home {
+    /* position: relative; */
+    padding-top: 45px;
+}
+
+.home-box {
+    padding:20px 30px;
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.project-title {
+    padding: 10px; 
+    margin:10px;/* the whole box, seperates boxes*/
+    text-align: justify;
+}
+
+.project-title img {
+    padding-top: 5px;
+    float: right;
+}
+
+.project-box{
+    /* padding: inherit; */
+    /* padding:20px; */
+    margin:20px;
+}
+
+.project-box p{
+    padding: 10px;
+    margin:10px; /* defines space between title and paragraph */
+}
+
+
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.grey-text {
+    color: grey;
+}
+
+.black-bg{
+    background-color: black;
+}
+
+.grey-bg{
+    background-color: grey;
+}
+
+.white-bg{
+    background-color: white;
+    margin:0;
+}
+
+.container {
+    padding: 10px;
+    text-align: center;
+}
+
+.centre-container {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 150px 0;
+    margin: 0 auto;
+}
+
+.home-container {
+    width: 75%;
+}
+
+.project-container {
+    width: 90%;
+}
+
+.rotation {
+    transform: rotate(180deg);
+}
+
+.project-links{
+    margin-right: 5px;
+    float: left;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+
+
+/* screen set to 650px or greater, apply these rulesets */
+@media only screen and (min-width: 1000px){
+    nav #menu{
+        display: none;
+    }
+
+    #bottom {
+        display: none;    
+    }
+
+    .hide-nav{
+        display: inline;
+    }
+
+    nav{
+        width: auto;
+        height: 100%; /* fill only header bar */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul{
+        background-color: black;
+        float: right;
+        width: 100%;
+        margin-top: 5px;
+        padding: inherit;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    nav ul li{
+        background-color: black;
+        width: 0;
+        padding: 0;
+        margin-right: 50px;
+        display: inline-table; /* headings in one line */
+        /* margin-bottom: 0; */ /* no need as nav height set to 100% of header bar */
+    }
+
+    h5{
+        font-size: 1em;
+        color: white;
+    }
+
+    header img {
+        margin-top: 15px;
+    }
+    
+    header #first-image {
+        margin-left: 30px;;
+    }
+
+    /* .centre-container {
+        width: 40%;
+    } */
+
+    .home-container {
+        width: 40%;
+    }
+    
+    .project-container {
+        width: 75%;
+    }
+
+    nav ul li:hover {
+        background-color: black;
+    } 
+
+
+
+}
