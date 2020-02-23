@@ -3,222 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header id="header">
-        <div class="container">
-            <ul>
-                <li><a href="#HOME">Home</a></li>
-                <li><a href="#ABOUT">About</a></li>
-                <li><a href="#PROJECTS">Projects</a></li>
-                <li><a href="#CONTACTS">Contact</a></li>
-            </ul>
+    <header>
+        <div id="header-container">
+            <div class="icons">
+                <a href="#"><img src="images/instagram.svg" alt="instagram-link" id='first-image'></a>
+                <a href="https://github.com/icapistrano" target="_blank"><img src="images/github.svg" alt="github-link"></a>
+                <a href="https://www.linkedin.com/in/immanuel-capistrano-370b91113/" target="_blank"><img src="images/linkedin.svg" alt="linkedin-link"></a>
+            </div>
+
+            <nav id="nav-container">
+                <a href="#image">
+                    <img src="images/nav-button.svg" alt="" id="menu">
+                </a>
+
+                <ul class="hide-nav headings-container" id="nav">
+                    <a href="#home"><li><h5>Home</h5></li></a>
+                    <a href="#projects"><li><h5>Projects</h5></li></a>
+                    <a href="#contact"><li><h5>Contacts</h5></li></a>
+
+                    <div id="bottom" class="hide-element"></div>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="HOME">
-        <br>
-        <div class="container">
-            <div class="pinboard"> 
-                <div id="home-pinboard">
+    <section id="home">
+        <div class="container black-bg">
+            <div class="centre-container home-container">
+                <h1 class="grey-text">Hello World,</h1>
+                <h2 class="grey-text">I am <span class="white-text">Immanuel Capistrano</span></h2>
 
-                    <div id="profile-pic">
-                        <img src="images/profile_pic.svg" alt="">
+                <p class="grey-text">I enjoy creating innovative products & systems using CAD, 3D printing and  programming</p>
+                <br>
+
+                <div id="more-info" class="home-box hide-element grey-bg">
+                    <p>I graduated at 2019 in Middlesex University, London with First Class Honours in BEng Robotics. Throughout my university studies and extra-curricular activities, I have gained an extensive knowledge in Python programming and its uses in robotics such as in ROS, industrial manipulators and mobile robotics, and Solidworks for 3D modelling from 2D drawings, simulation and optimising design for 3D printing.
+                    <br>
+                    <br>
+                    Although, I have a background in Robotics, I have truly enjoyed programming and I am
+                    now aspiring as a software developer. I am currently learning Front-end technologies: HTML, CSS and Javascript.
+                </div>
+            
+                <button onclick="extendInfo()" id="read-button" class="grey-bg">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container grey-bg">
+            <div class="centre-container project-container">
+                <h1 class="white-text">Projects</h1>
+
+                <div class="project-title black-bg">
+                    <h2 class="white-text">Air-hockey System</h2>
+                    <img src="images/drop-button.svg" alt="more info" id="projectMenu1">
+                    <div class="project-box white-bg hide-element" id="project1">
+                        <p>Final Year Project (2019)
+                            <br>
+                            <br>
+                            Programmed an industrial manipulator (ABB IRB 120) to play air-hockey against a human player in Python and using ROS (Robot Operating System) and computer vision.
+                            <br>
+                            <br>
+                            I used ROS for the ROS-Industrial package where I could program the robot in Python and use the OpenCV library. Using Python, I was able to use a USB camera to provide vision to the system, instead of an expensive camera that is only compatible with Rapid code (the native language of the robot).
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=bhhEhC5JmoQ&t=0s" target="_blank"><img src="images/youtube_black.svg" alt="youtube link" class="project-links"></a>
+                            <a href="https://github.com/icapistrano/airhockey_with_ABB" target="_blank"><img src="images/github_black.svg" alt="github link" class="project-links"></a>  
+                            <br>
+                            <br>
+                        </p> 
+                              
                     </div>
+                </div>
 
-                    <div id="home-rightcolumn">
-                        <div class="note first-note">
-                            <img src="images/hello-world.svg" alt="">
-                        </div>
+                <div class="project-title black-bg">
+                    <h2 class="white-text">ABB Drawing</h2>
+                    <img src="images/drop-button.svg" alt="more info" id="projectMenu2">
+                    <div class="project-box white-bg hide-element" id="project2">
+                        <p>ABB Drawing with Rapid (2019)
+                            <br>
+                            <br>
+                            Programmed an ABB IRB 120 to write my initials using manual jogging, draw the ABB logo with offline programming in Robot Studio and draw varying flower patterns depending on user inputs.
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=tV435rW81Bs&t=0s" target="_blank"><img src="images/youtube_black.svg" alt="youtube link" class="project-links"></a>
+                            <a href="https://github.com/icapistrano/ABB_drawing" target="_blank"><img src="images/github_black.svg" alt="github link" class="project-links"></a>  
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
 
-                        <a href="https://github.com/icapistrano">
-                            <div class="note">
-                                <img src="images/github.svg" alt="">
-                            </div>
-                        </a>
+                <div class="project-title black-bg">
+                    <h2 class="white-text">ABB Welding</h2>
+                    <img src="images/drop-button.svg" alt="more info" id="projectMenu3">
+                    <div class="project-box white-bg hide-element" id="project3">
+                        <p>ABB Welding with Rapid and WAAM (2019)
+                            <br>
+                            <br>
+                            I worked on an R&D project at Steelo, London as a robotics intern. The project involved learning WAAM (Wire Arc Additive Manufacture) for 3D printing steel using a weld torch and programming robot paths with a 6-axis industrial manipulator. 
+                            <br>
+                            My most sucess was 3D printing basic geometric shapes such as squares and cirle with a total height of 5cm and 2mm layers.
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=dg1znguxAJw&t=0s" target="_blank"><img src="images/youtube_black.svg" alt="youtube link" class="project-links"></a>
+                            <a href="https://github.com/icapistrano/WAAM_with_ABB" target="_blank"><img src="images/github_black.svg" alt="github link" class="project-links"></a>  
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
 
-                        <a href="https://www.linkedin.com/in/immanuel-capistrano-370b91113/">
-                            <div class="note">
-                                <img src="images/linkedin.svg" alt="">
-                            </div>
-                        </a>
+                
+                <div class="project-title black-bg">
+                    <h2 class="white-text">Labview Manipulator</h2>
+                    <img src="images/drop-button.svg" alt="more info" id="projectMenu4">
+                    <div class="project-box white-bg hide-element" id="project4">
+                        <p>Robotic Manipulator in Labview Simulation (2019)
+                            <br>
+                            <br>
+                            Programmed a robotic manipulator in Labview to emulate a manipulator for picking and placing objects at varying heights using the robotics module. I chose the design of the robot (e.g length of each links and number of joints) to fit the specification.
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=8xqYicS-PB8&t=0s" target="_blank"><img src="images/youtube_black.svg" alt="youtube link" class="project-links"></a> 
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
 
-                        <a href="cv">
-                            <div class="note">
-                                <img src="images/cv.svg" alt="">
-                            </div>
-                        </a>
+                <div class="project-title black-bg">
+                    <h2 class="white-text">Turtlebot OpenCV</h2>
+                    <img src="images/drop-button.svg" alt="more info" id="projectMenu5">
+                    <div class="project-box white-bg hide-element" id="project5">
+                        <p>Turtlebot with ROS and OpenCV (2018)
+                            <br>
+                            <br>
+                            Programmed a Turtlebot in Python to move at various directions depending on a colour seen from a camera laptop using colour detection with OpenCV and ROS for sending ROS messages.
+                            <br>
+                            <a href="https://www.youtube.com/watch?v=fF5-zu1F2e0" target="_blank"><img src="images/youtube_black.svg" alt="youtube link" class="project-links"></a>
+                            <br>
+                            <br>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ABOUT">
-        <br>
-        <div class="container">
-            <div class="pinboard">
-                <div id="about-pinboard">
+    <section id="contact">
+        <div class="container black-bg">
+            <div class="centre-container project-container"> 
+                <h1 class="white-text">Contact</h1>
+                <p class="white-text">If you would like to contact me, kindly click</p>
 
-                    <div id="about-midcolumn" >
-                        <div class="note first-note">
-                            <img src="images/about-tag.svg" alt="">
-                        </div>
-                    </div>
-
-                    <ul>
-                        <li>
-                            <div class="note">
-                                <img src="images/about-green1.svg" alt="">
-                            </div>
-                        </li>
-                            
-                        <li>
-                            <div class="note">
-                                <img src="images/about-green2.svg" alt="">
-                            </div>
-                        </li>
-    
-                        <li>
-                            <div class="note">
-                                <img src="images/about-purple1.svg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <div class="note">
-                                <img src="images/about-orange1.svg" alt="">
-                            </div>
-                        </li>
-                            
-                        <li>
-                            <div class="note">
-                                <img src="images/about-orange2.svg" alt="">
-                            </div>
-                        </li>
-    
-                        <li>
-                            <div class="note">
-                                <img src="images/about-orange3.svg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <div class="note">
-                                <img src="images/about-blue1.svg" alt="">
-                            </div>
-                        </li>
-                        
-                        <li></li>
-                        <li></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="PROJECTS">
-        <br>
-        <div class="container">
-            <div class="pinboard">
-                <div id="projects-pinboard">
-
-                    <div id="project-midcolumn" >
-                        <div class="note project-note">
-                            <img src="images/projects-tag.svg" alt="">
-                        </div>
-                    </div>
-
-                    <ul>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=bhhEhC5JmoQ">
-                                <div class="note">
-                                    <img src="images/airhockey-system.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                            
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=fF5-zu1F2e0">
-                                <div class="note">
-                                    <img src="images/turtlebot-opencv.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=oZzE-rF6tfk&t=2s">
-                                <div class="note">
-                                    <img src="images/light-animations.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=tV435rW81Bs">
-                                <div class="note">
-                                    <img src="images/robot-drawing.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                            
-                        <li>
-                            <a href="robot-welding">
-                                <div class="note">
-                                    <img src="images/robot-welding.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-    
-                        <li>
-                            <a href="https://www.youtube.com/watch?v=8xqYicS-PB8">
-                                <div class="note">
-                                    <img src="images/labview-simulator.svg" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <div class="note">
-                                <img src="images/other.svg" alt="">
-                            </div>
-                        </li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="CONTACTS">
-        <br>
-        <div class="container">
-            <div class="pinboard">
-                <a href="mailto:icapistrano97@outlook.com">
-                    <img src="images/contact_email.svg" alt="">
-                </a>
+                <a href="mailto:icapistrano97@outlook.com" class="white-text italic">icapistrano97@outlook.com</a>
 
             </div>
         </div>
     </section>
 
-    <br>
-    <br>
-    <br>
+    <script>
+        let menu = document.getElementById('menu');
+        let nav = document.getElementById('nav');
 
-    
+        menu.addEventListener('click', function(e){
+            // toggle: if 'hide-nav' is set remove it, otherwise add it
+            nav.classList.toggle('hide-nav');
+            e.preventDefault();
+        });
+
+        function extendInfo() {
+            let moreInfo = document.getElementById("more-info");
+            let buttonText = document.getElementById("read-button")
+
+            moreInfo.classList.toggle("hide-element");
+            if (buttonText.innerHTML === "Read More"){
+                buttonText.innerHTML = "Read Less";
+            }   
+            else {
+                buttonText.innerHTML = "Read More";
+            }
+        };
+
+        class HideProject {
+            constructor(dropMenu, project){
+                this.dropMenu = dropMenu;
+                this.project = project;
+            }
+
+            hideElement() {
+                console.log("test");
+
+                let dropMenu = document.getElementById(this.dropMenu);
+                let project = document.getElementById(this.project);
+
+                dropMenu.addEventListener('click', function(e){
+                    console.log(dropMenu + "" + project);
+                    project.classList.toggle('hide-element');
+                    dropMenu.classList.toggle('rotation');
+                    e.preventDefault();
+                });
+            }
+        }
+
+        let airHockeyP = new HideProject("projectMenu1", "project1");
+        airHockeyP.hideElement();
+
+        let abbDrawing = new HideProject("projectMenu2", "project2");
+        abbDrawing.hideElement();
+
+        let abbWelding = new HideProject("projectMenu3", "project3");
+        abbWelding.hideElement();
+
+        let labviewRobot = new HideProject("projectMenu4", "project4");
+        labviewRobot.hideElement();
+
+        let turtlebotOpenCV = new HideProject("projectMenu5", "project5");
+        turtlebotOpenCV.hideElement();
+
+    </script>
+
 </body>
 </html>
