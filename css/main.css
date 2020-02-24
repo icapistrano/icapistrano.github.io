@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     /* background-color: black; */
 }
 
@@ -10,8 +11,8 @@ h1 {
 }
 
 h2  {
-    font-size: 1.4em;
-    margin: 20px;
+    font-size: 1.1em;
+    /* margin: 20px; */
     display: inline;
 
 }
@@ -23,8 +24,8 @@ header{
 }
 
 header img {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    /* margin-bottom: 20px; */
     margin-left: 0;
 }
 
@@ -38,7 +39,7 @@ header #first-image {
 
 #header-container {
     background-color: black;
-    height:45px;
+    height:50px;
     position: relative;
 }
 
@@ -109,24 +110,44 @@ nav ul li:hover {
 .home-box {
     padding:20px 30px;
     margin: 25px 0;
-    text-align: justify;
+    text-align:center;
 }
 
 .project-title {
+    width: 90%;
     padding: 10px; 
     margin:10px;/* the whole box, seperates boxes*/
-    text-align: justify;
+    text-align: left;
+    display: inline-block;
+
+
 }
 
-.project-title img {
-    padding-top: 5px;
+/* .project-title img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 20px;
     float: right;
-}
+} */
 
 .project-box{
-    /* padding: inherit; */
-    /* padding:20px; */
     margin:20px;
+    text-align: center;
+}
+
+.project-title .project-box img {
+    text-align: center;
+    /* float: right; */
+    height: 25px;
+    /* margin-left: 5px; */
+    margin: 10px 5px 0 5px;
+}
+
+.project-title .drop-button {
+    height: 20px;
+    /* padding-top: 2px; */
+    /* padding-bottom: 2px; */
+    float: right;
 }
 
 .project-box p{
@@ -134,8 +155,8 @@ nav ul li:hover {
     margin:10px; /* defines space between title and paragraph */
 }
 
-
 .white-text {
+    /* color: white; */
     color: white;
 }
 
@@ -167,12 +188,12 @@ nav ul li:hover {
 
 .centre-container {
     font-family: 'Courier New', Courier, monospace;
-    padding: 150px 0;
+    padding: 100px 0;
     margin: 0 auto;
 }
 
 .home-container {
-    width: 75%;
+    width: 90%;
 }
 
 .project-container {
@@ -183,13 +204,13 @@ nav ul li:hover {
     transform: rotate(180deg);
 }
 
-.project-links{
-    margin-right: 5px;
-    float: left;
-}
 
 .italic {
     font-style: italic;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 
@@ -230,6 +251,7 @@ nav ul li:hover {
 
     nav ul li{
         background-color: black;
+        color: white;
         width: 0;
         padding: 0;
         margin-right: 50px;
@@ -250,10 +272,6 @@ nav ul li:hover {
         margin-left: 30px;;
     }
 
-    /* .centre-container {
-        width: 40%;
-    } */
-
     .home-container {
         width: 40%;
     }
@@ -266,6 +284,19 @@ nav ul li:hover {
         background-color: black;
     } 
 
+    h2  {
+        font-size: 1.4em;
+        margin: 20px;
+    }
 
-
+    .home-box, .project-box {
+        text-align:justify;
+    }
+    
+    .project-title .project-box img {
+        /* text-align: center; */
+        float: right;
+        margin-left: 5px;
+        /* margin: 10px 5px 0 5px; */
+    }
 }
