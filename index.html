@@ -41,15 +41,14 @@
                 <p class="grey-text">I enjoy creating innovative products & systems using CAD, 3D printing and  programming</p>
                 <br>
 
-                <div id="more-info" class="home-box hide-element grey-bg">
+                <div id="about-info" class="home-box hide-element grey-bg">
                     <p>I graduated at 2019 in Middlesex University, London with First Class Honours in BEng Robotics. Throughout my university studies and extra-curricular activities, I have gained an extensive knowledge in Python programming and its uses in robotics such as in ROS, industrial manipulators and mobile robotics, and Solidworks for 3D modelling from 2D drawings, simulation and optimising design for 3D printing.
                     <br>
                     <br>
                     Although, I have a background in Robotics, I have truly enjoyed programming and I am
                     now aspiring as a software developer. I am currently learning Front-end technologies: HTML, CSS and Javascript.
                 </div>
-            
-                <button onclick="extendInfo()" id="read-button" class="grey-bg">Read More</button>
+                <button onclick="aboutExtend()" id="about-button" class="grey-bg">Read More</button>
             </div>
         </div>
     </section>
@@ -164,64 +163,66 @@
         </div>
     </section>
 
-    <script>
-        let menu = document.getElementById('menu');
-        let nav = document.getElementById('nav');
+    <!-- finish classes in main.js -->
+    <script src="main.js">
+        
+        // let menu = document.getElementById('menu');
+        // let nav = document.getElementById('nav');
 
-        menu.addEventListener('click', function(e){
-            // toggle: if 'hide-nav' is set remove it, otherwise add it
-            nav.classList.toggle('hide-nav');
-            e.preventDefault();
-        });
+        // menu.addEventListener('click', function(e){
+        //     // toggle: if 'hide-nav' is set remove it, otherwise add it
+        //     nav.classList.toggle('hide-nav');
+        //     e.preventDefault();
+        // });
 
-        function extendInfo() {
-            let moreInfo = document.getElementById("more-info");
-            let buttonText = document.getElementById("read-button")
+        // function extendInfo() {
+        //     let moreInfo = document.getElementById("more-info");
+        //     let buttonText = document.getElementById("read-button")
 
-            moreInfo.classList.toggle("hide-element");
-            if (buttonText.innerHTML === "Read More"){
-                buttonText.innerHTML = "Read Less";
-            }   
-            else {
-                buttonText.innerHTML = "Read More";
-            }
-        };
+        //     moreInfo.classList.toggle("hide-element");
+        //     if (buttonText.innerHTML === "Read More"){
+        //         buttonText.innerHTML = "Read Less";
+        //     }   
+        //     else {
+        //         buttonText.innerHTML = "Read More";
+        //     }
+        // };
 
-        class HideProject {
-            constructor(dropMenu, project){
-                this.dropMenu = dropMenu;
-                this.project = project;
-            }
+        // class HideProject {
+        //     constructor(dropMenu, project){
+        //         this.dropMenu = dropMenu;
+        //         this.project = project;
+        //     }
 
-            hideElement() {
-                console.log("test");
+        //     hideElement() {
+        //         console.log("test");
 
-                let dropMenu = document.getElementById(this.dropMenu);
-                let project = document.getElementById(this.project);
+        //         let dropMenu = document.getElementById(this.dropMenu);
+        //         let project = document.getElementById(this.project);
 
-                dropMenu.addEventListener('click', function(e){
-                    console.log(dropMenu + "" + project);
-                    project.classList.toggle('hide-element');
-                    dropMenu.classList.toggle('rotation');
-                    e.preventDefault();
-                });
-            }
-        }
+        //         dropMenu.addEventListener('click', function(e){
+        //             console.log(dropMenu + "" + project);
+        //             project.classList.toggle('hide-element');
+        //             dropMenu.classList.toggle('rotation');
+        //             e.preventDefault();
+        //         });
+        //     }
+        // }
 
-        let airHockeyP = new HideProject("projectMenu1", "project1");
-        airHockeyP.hideElement();
+        // let airHockeyP = new HideProject("projectMenu1", "project1");
+        // airHockeyP.hideElement();
 
-        let abbDrawing = new HideProject("projectMenu2", "project2");
-        abbDrawing.hideElement();
+        // let abbDrawing = new HideProject("projectMenu2", "project2");
+        // abbDrawing.hideElement();
 
-        let abbWelding = new HideProject("projectMenu3", "project3");
-        abbWelding.hideElement();
+        // let abbWelding = new HideProject("projectMenu3", "project3");
+        // abbWelding.hideElement();
 
-        let labviewRobot = new HideProject("projectMenu4", "project4");
-        labviewRobot.hideElement();
+        // let labviewRobot = new HideProject("projectMenu4", "project4");
+        // labviewRobot.hideElement();
 
-        let turtlebotOpenCV = new HideProject("projectMenu5", "project5");
-        turtlebotOpenCV.hideElement();
+        // let turtlebotOpenCV = new HideProject("projectMenu5", "project5");
+        // turtlebotOpenCV.hideElement();
 
     </script>
 

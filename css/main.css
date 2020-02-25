@@ -294,9 +294,7 @@ nav ul li:hover {
     }
     
     .project-title .project-box img {
-        /* text-align: center; */
         float: right;
         margin-left: 5px;
-        /* margin: 10px 5px 0 5px; */
     }
 }
